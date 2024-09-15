@@ -1,4 +1,5 @@
-# H2 - DATA ANALYST
+# H2 - DATA ANALYST - https://youtu.be/z3K7-go6cKM
+
 ### A. Explain how you are going to solve the problem mentioned above. No coding or pseudocode is needed in this step.
 Since we're given the data in order, I'm gonna use two arrays that are already sorted in order of the months. 
 First, I'm gonna find the total average sales of the year, and then find all the months that performed above average. 
