@@ -1,4 +1,4 @@
-# H3 Linked List
+# H3 Linked List https://youtu.be/FQ7Gi5QDdLc
 
 preface: I could not understand how to get a profiler onto my system. So, I watched a few videos, and ran intoThe Cherno's video on C++ benchmarking (//www.youtube.com/watch?v=YG4jexlSAjc) by using the <chrono> library I created his timer for a function below:
 
