@@ -15,8 +15,71 @@ This can also be proven by showing that 31 levels is not enough nodes, meaning w
 ---
 
 ## 3) Write an algorithm that finds the greatest value within a binary search tree. 2 points)
+Because a binary search tree by definition has it such that the right child of a parent node is always greater, we can keep going down the right until we get to the greatest value node:
 
+```
+void GreatestNode(Node* root){
+    if(root->right == nullptr){
+        cout << "greatest value is " << root->data;
+        return;
+    }
+    GreatestNode(root->right);
+}
+```
+this function is recursive. Referring to the code for question 4 on this assignment, if the node creates the left and right child node as nullptr values, then we can just check until the right child of a given node is nullptr, making that parent node the highest. The GreatestNode function keeps looping through until it bumps into the nullptr value on a right child node, and outputs the data of the right parent node. This will be implemented into the #4 also. 
 
 ---
 
 ## 4) Write a code in C++ using the same array mentioned in #1 and implement a binary search tree. Only insertion operation is required. (5 points)
+```
+#include <iostream>
+using namespace std;
+
+struct Node {
+    int data;
+    Node *left;
+    Node *right;
+};
+
+    Node* newNode(int data) {
+        Node* temp = new Node;
+        temp->data = data;
+        temp->left = nullptr;
+        temp->right = nullptr;
+        return temp;
+};
+
+Node* insertNode(Node* root, int data){
+    if(root == nullptr){
+        return newNode(data);
+    }
+    if (data < root->data) {
+        root->left = insertNode(root->left, data);
+        } else {
+        root->right = insertNode(root->right, data);
+        }
+    return root;
+}
+
+
+void GreatestNode(Node* root){
+    if(root->right == nullptr){
+        cout << "greatest value is " << root->data;
+        return;
+    }
+    GreatestNode(root->right);
+}
+
+int main() {
+    int Arr[9] = {1, 5, 9, 2, 4, 10, 6, 3, 8};
+    Node* root = newNode(Arr[0]);
+
+    for(int i = 1; i < 9; i++){
+    root = insertNode(root, Arr[i]);
+    }
+
+    GreatestNode(root);
+}
+
+
+```
