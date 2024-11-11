@@ -1,4 +1,4 @@
-#"Why Dijkstra's algorithm fails on negative weights".
+# "Why Dijkstra's algorithm fails on negative weights". https://youtu.be/KmSesnEIMuw
 
 Dijkstra's algorithm runs on the assumption that all weights are positive. That means once dijsktra compares the path from A-B and A-C, it assumes that A-B-D > A-B and A-C-D > A-C  because it assumes the adding of positive weights. However, when negative weights are used, they can go be shortened since adding a negative is equivalent to subtracting. 
 
