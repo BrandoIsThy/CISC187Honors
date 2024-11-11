@@ -1,3 +1,5 @@
+### https://studio.youtube.com/video/KmSesnEIMuw/edit
+
 1) create a theoretical graph
 ij![image](https://github.com/user-attachments/assets/dbe382bf-888b-4c69-806a-080b4837dffe)
 
