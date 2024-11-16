@@ -28,7 +28,8 @@ function reverse(array) {
 | ---------- | --------------- | ---------------- |
 | Version #1 |      O(n)       |       O(n)       |
 | Version #2 |      O(n)       |       O(1)       |
-| Version #3 |      O(n)       |       O(n)       |
+| Version #3 |      O(n)       |       O(n)       |  
+
 reasoning:  
 1) time complexity is O(n) since it just iterates thru the entire array and all n elements. space is O(n) since it uses another array, newArray. this means it delegated a space to initialize array, and a created a new space of size n equal to the initial array.
 2) time complexity is O(n) since it just iterates thru the entire array and all n elements. space is O(1) since it does not create new memory, but rather just manipulates the one using the space that was already delegated for the initialization of the array.
