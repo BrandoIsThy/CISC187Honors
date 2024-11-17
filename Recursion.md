@@ -1,3 +1,4 @@
+# https://youtu.be/KgbHzo5vjA8
 ### Base Case
 The base case is low = 12, and high = 10. This is because high does not change, however low = low + 2 every time low is not greater than high. At first, i thought it might be low = 10 and high = 10, but 10 is infact not greater than 10, so i think it'll have to be 12 and 10 to satisfy that low > high. 
 
