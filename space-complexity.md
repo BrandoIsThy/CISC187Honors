@@ -1,3 +1,4 @@
+## https://youtu.be/NOwU-DPg9KY
 ### 1) Following is the 'Word Builder' algorithm. Describe its space complexity in terms of Big O. 
   The word builder problem has a space coplexity of O(n), as it has a given array, and then creates another array called collection where data is later stored.
 ### 2) Following is a function that reverses an array. Describe its space complexity in terms of Big O:
